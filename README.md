@@ -1,4 +1,4 @@
-# Bypass-basic-roblox-GUI-logins
+# Bypass-basic-roblox-GUI-keys
 By: Celvis#5477
 
 This can help you bypass some GUI logins if they have one. You may have to change this script a bit yourself to make it work, just depends.
