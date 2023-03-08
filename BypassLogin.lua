@@ -1,4 +1,4 @@
--- Bypass basic Roblox GUI login
+-- Bypass basic Roblox GUI key system
 -- by: Celvis#5477
 
 -- Please note that you may have to change somethings up yourself to get it to work. Just depends. If you are smart enough you'll figure it out.
