@@ -9,7 +9,7 @@ local old; old = hookmetamethod(textBox, "__index", function(self, index)
     
     -- check
     if index == "Text" then
-        return debug.getstack(3)[12][3];
+        return debug.getstack(3)[12][3]; -- rec to change here
     end
     return old(self, index);
 end);
