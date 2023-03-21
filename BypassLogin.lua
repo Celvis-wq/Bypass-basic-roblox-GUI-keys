@@ -13,3 +13,37 @@ local old; old = hookmetamethod(textBox, "__index", function(self, index)
     end
     return old(self, index);
 end);
+
+--[[ Example usage
+-- variables
+local textBox = game:GetService("CoreGui").ui_key.main.keybox;
+local old; old = hookmetamethod(textBox, "__index", function(self, index)
+    
+    -- check
+    if index == "Text" then
+        return "rfuyxn2rl" --_G._stk;
+    end
+    return old(self, index);
+end);
+
+
+
+ -- OR
+-- variables
+local textBox = game:GetService("CoreGui").ui_key.main.keybox;
+local old; old = hookmetamethod(textBox, "__index", function(self, index)
+    
+    -- check
+    if index == "Text" then
+        return getgenv()._stk;
+    end
+    return old(self, index);
+end);
+--]]
+
+--[[ I am still wondering if this will help with well obfuscated scripts, maybe not :/
+local part = Instance.new("TextBox");
+local properties = getproperties(part);
+print(properties.Text)
+
+--]]
