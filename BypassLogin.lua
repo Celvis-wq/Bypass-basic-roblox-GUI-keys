@@ -21,7 +21,7 @@ local old; old = hookmetamethod(textBox, "__index", function(self, index)
     
     -- check
     if index == "Text" then
-        return "rfuyxn2rl" --_G._stk;
+        return "ABCD" --_G._stk;
     end
     return old(self, index);
 end);
